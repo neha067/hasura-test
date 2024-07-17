@@ -1,0 +1,11 @@
+table:
+  name: banks
+  schema: public
+array_relationships:
+  - name: transactions
+    using:
+      foreign_key_constraint_on:
+        column: bank_id
+        table:
+          name: transactions
+          schema: public

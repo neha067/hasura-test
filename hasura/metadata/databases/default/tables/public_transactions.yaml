@@ -1,0 +1,13 @@
+table:
+  name: transactions
+  schema: public
+object_relationships:
+  - name: bank
+    using:
+      foreign_key_constraint_on: bank_id
+  - name: company
+    using:
+      foreign_key_constraint_on: company_id
+  - name: vendor
+    using:
+      foreign_key_constraint_on: vendor_id
